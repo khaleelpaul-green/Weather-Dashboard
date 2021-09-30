@@ -54,7 +54,7 @@ function getCurrentWeather() {
                                     windEl.textContent = 'Wind: ' + windValue + 'MPH'
                                     humidityEl.textContent = 'Humidity: ' + humidityValue + '%'
                                     uvIndexEl.textContent = 'UV Index: ' + indexValue
-                                    weatherIconEl.innerHTML = '<img class="weatherimg" src="./Assets/icons/openweathermap-api-icons/icons/' + icon + '.png">'
+                                    weatherIconEl.innerHTML = '<img class="weatherimg" src="./Assets/icons/' + icon + '.png">'
 
                                     if (indexValue < 3) {
                                         uvIndexEl.style.backgroundColor = '#77dd77'
@@ -150,27 +150,27 @@ function getFutureWeather() {
                                         let wind5 = data.daily[5].wind_speed
                                         let humidity5 = data.daily[5].humidity
 
-                                        day1icon.innerHTML = '<img class="weatherimg" src="./Assets/icons/openweathermap-api-icons/icons/' + icon1 + '.png">'
+                                        day1icon.innerHTML = '<img class="weatherimg" src="./Assets/icons/' + icon1 + '.png">'
                                         day1temp.textContent = 'Temp: ' + temp1 + '°F'
                                         day1wind.textContent = 'Wind: ' + wind1 + 'MPH'
                                         day1humid.textContent = 'Humidity: ' + humidity1 + '%'
 
-                                        day2icon.innerHTML = '<img class="weatherimg" src="./Assets/icons/openweathermap-api-icons/icons/' + icon2 + '.png">'
+                                        day2icon.innerHTML = '<img class="weatherimg" src="./Assets/icons/' + icon2 + '.png">'
                                         day2temp.textContent = 'Temp: ' + temp2 + '°F'
                                         day2wind.textContent = 'Wind: ' + wind2 + 'MPH'
                                         day2humid.textContent = 'Humidity: ' + humidity2 + '%'
 
-                                        day3icon.innerHTML = '<img class="weatherimg" src="./Assets/icons/openweathermap-api-icons/icons/' + icon3 + '.png">'
+                                        day3icon.innerHTML = '<img class="weatherimg" src="./Assets/icons/' + icon3 + '.png">'
                                         day3temp.textContent = 'Temp: ' + temp3 + '°F'
                                         day3wind.textContent = 'Wind: ' + wind3 + 'MPH'
                                         day3humid.textContent = 'Humidity: ' + humidity3 + '%'
 
-                                        day4icon.innerHTML = '<img class="weatherimg" src="./Assets/icons/openweathermap-api-icons/icons/' + icon4 + '.png">'
+                                        day4icon.innerHTML = '<img class="weatherimg" src="./Assets/icons/' + icon4 + '.png">'
                                         day4temp.textContent = 'Temp: ' + temp4 + '°F'
                                         day4wind.textContent = 'Wind: ' + wind4 + 'MPH'
                                         day4humid.textContent = 'Humidity: ' + humidity4 + '%'
 
-                                        day5icon.innerHTML = '<img class="weatherimg" src="./Assets/icons/openweathermap-api-icons/icons/' + icon5 + '.png">'
+                                        day5icon.innerHTML = '<img class="weatherimg" src="./Assets/icons/' + icon5 + '.png">'
                                         day5temp.textContent = 'Temp: ' + temp5 + '°F'
                                         day5wind.textContent = 'Wind: ' + wind5 + 'MPH'
                                         day5humid.textContent = 'Humidity: ' + humidity5 + '%'
