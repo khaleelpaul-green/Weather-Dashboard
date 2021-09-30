@@ -6,7 +6,7 @@ the OpenWeather APIs (https://openweathermap.org/api/one-call-api), the first ca
 inputt into the url of the second API call that would then produce all of the weather data needed to display for the user.
 
 Bugs/Missing Features:
-There are a couple bugs, such as the search history updates being delayed by a second press of the search button.
+There is a bug where the search history updates are delayed by a second press of the search button.
 
 Link: https://khaleelpaul-green.github.io/Weather-Dashboard/
 
