@@ -5,6 +5,9 @@ the five day forecast for that given city. In order to accomplish this I need to
 the OpenWeather APIs (https://openweathermap.org/api/one-call-api), the first call was to acquire the longitude and latitude values for the entered city, that were then 
 inputt into the url of the second API call that would then produce all of the weather data needed to display for the user.
 
-Link: 
+Bugs/Missing Features:
+There are a couple bugs, such as the search history updates being delayed by a second press of the search button, as well as the weather icons being slightly displaced. Furthermore, the search history terms do not act as links to pull back up the respective city's forecast.
+
+Link: https://khaleelpaul-green.github.io/Weather-Dashboard/
 
 *screenshot of deployed website included in assets folder
