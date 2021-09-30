@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+            integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+            crossorigin="anonymous"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./Assets/css/style.css" />
+        <title>Weather Dashboard</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-design">
+                <h1 class="header-text">Weather Dashboard</h1>
+            </div>
+        </header>
+        <div class="container m-15 my-3">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h2 class="nameStyle">Search for a City:</h2>
+                    <form id="search-form">
+                        <input id="user-input" class="form-control" style="border: solid black 1px;" type="text" placeholder="Type to search...">
+                        <button class="searchbtn">Search</button>
+                    </form>
+                    <hr class="line-break">
+                    <div class="container" id="search-column" style="height: 500rem; padding: 0; z-index: 2;"></div>              
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-8" id="current-weather-result">
+                    <h2 class="name nameStyle"></h2> 
+                    <div class="weather-icon">
+                        <img class="iconimg" src="./Assets/icons/openweathermap-api-icons/icons/unknown.png">
+                    </div>
+                    <p class="temp weatherStyle"></p>
+                    <p class="wind weatherStyle"></p>
+                    <p class="humidity weatherStyle"></p>
+                    <p class="uvIndex"></p>
+                </div>
+            </div>
+            <div class="row " style="width: 81rem;">
+                <div class="col-8 five-day">
+                    <h3 style="font-weight: bold;">Five Day Forecast</h3>
+                    <div class="card" style="width: 10rem; height: 15rem; background-color: rgb(31, 31, 161); border: none; position: relative; top: 0rem;">
+                        <div class="card-body five-day1" style="z-index: 2;">
+                            <div class="w-icon1 icon-style"></div>
+                            <p class="t1"></p>
+                            <p class="w1"></p>
+                            <p class="hu1"></p>
+                        </div>
+                      </div>
+                    <div class="card five-day2" style="width: 10rem; height: 15rem; background-color: rgb(31, 31, 161); border: none; position: relative; left: 10.5rem; top: -15rem;">
+                        <div class="card-body five-day2" style="z-index: 2;">
+                            <div class="w-icon2 icon-style"></div>
+                            <p class="t2"></p>
+                            <p class="w2"></p>
+                            <p class="hu2"></p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 10rem; height: 15rem; background-color: rgb(31, 31, 161); border: none; position: relative; left: 21rem; top: -30rem;">
+                        <div class="card-body five-day3" style="z-index: 2;">
+                            <div class="w-icon3 icon-style"></div>
+                            <p class="t3"></p>
+                            <p class="w3"></p>
+                            <p class="hu3"></p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 10rem; height: 15rem; background-color: rgb(31, 31, 161); border: none; position: relative; left: 31.5rem; top: -45rem;">
+                        <div class="card-body five-day4" style="z-index: 2;">
+                            <div class="w-icon4 icon-style"></div>
+                            <p class="t4"></p>
+                            <p class="w4"></p>
+                            <p class="hu4"></p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 10rem; height: 15rem; background-color: rgb(31, 31, 161); border: none; position: relative; left: 42rem; top: -60rem;">
+                        <div class="card-body five-day5" style="z-index: 2;">
+                            <div class="w-icon5 icon-style"></div>
+                            <p class="t5"></p>
+                            <p class="w5"></p>
+                            <p class="hu5"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <h4 style="position: fixed; top: 50rem; left: 30rem;">*NOTE: if search term isn't immediately added to history, click the search button again!</h4>
+        </footer>
+        
+        <script src="./Assets/js/script.js"></script>
+    </body>
+</html>
