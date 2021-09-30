@@ -22,7 +22,7 @@ function getCurrentWeather() {
     let inputValue = document.getElementById('user-input').value
     let city = JSON.stringify(inputValue).replace(/^["'](.+(?=["']$))["']$/, '$1')
 
-    let queryUrl = 'http://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=e366591e2218a06fb0cdcbe8a624438c';
+    let queryUrl = 'https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=e366591e2218a06fb0cdcbe8a624438c';
 
     fetch(queryUrl)
         .then(function (response) {
@@ -79,7 +79,7 @@ function getFutureWeather() {
     let inputValue = document.getElementById('user-input').value
     let city = JSON.stringify(inputValue).replace(/^["'](.+(?=["']$))["']$/, '$1')
 
-    let queryUrl = 'http://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=e366591e2218a06fb0cdcbe8a624438c';
+    let queryUrl = 'https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=e366591e2218a06fb0cdcbe8a624438c';
 
     fetch(queryUrl)
         .then(function (response) {
